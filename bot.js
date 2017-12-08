@@ -46,6 +46,7 @@ bot.on("message", function(message) {
         .addField("Owner", "Displays who the owner of the bot is!")
         .addField("Patreon", "Sends a link to visit my patreon page!")
         .addField("Yt or Youtube", "Sends a link to my youtube page!")
+        .addField("GitHub", "Sends a link to my GitHub page showing my bot code!")
       message.author.send(embed);
       break;
       case "noticeme":
@@ -61,7 +62,10 @@ bot.on("message", function(message) {
         message.channel.send('https://www.youtube.com/channel/UC1Ja1P-srYEbAwoRkCszPYg');
         break;
       case "youtube":
-        message.channel.send('https://www.youtube.com/channel/UC1Ja1P-srYEbAwoRkCszPYg')
+        message.channel.send('https://www.youtube.com/channel/UC1Ja1P-srYEbAwoRkCszPYg');
+        break;
+      case "github":
+        message.channel.send('https://github.com/solidercraft203/walrusbot');
         break;
   }
 });
